@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 contentTextView.setText(userInputStr);
 
                 Toast.makeText(MainActivity.this, "입력값이 반영되었습니다.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "두번째 토스트", Toast.LENGTH_LONG).show();
             }
         });
 
