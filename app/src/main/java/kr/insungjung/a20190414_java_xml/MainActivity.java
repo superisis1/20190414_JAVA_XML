@@ -29,7 +29,14 @@ public class MainActivity extends AppCompatActivity {
         okBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("확인버튼","터치 이벤트 발생!!!");
+                Log.d("확인버튼", "터치 이벤트 발생!!!");
+
+//                입력 editText 내용을 뽑아서 userInputStr 변수에 저장
+                String userInputStr = inputEditText.getText().toString();
+
+//                담겨있던 내용을 가져다가 TextView 에 set 함
+                contentTextView.setText(userInputStr);
+
             }
         });
 
