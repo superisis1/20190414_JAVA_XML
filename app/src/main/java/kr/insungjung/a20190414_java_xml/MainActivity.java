@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 //                담겨있던 내용을 가져다가 TextView 에 set 함
                 contentTextView.setText(userInputStr);
 
+                Toast.makeText(MainActivity.this, "입력값이 반영되었습니다.", Toast.LENGTH_SHORT).show();
             }
         });
 
